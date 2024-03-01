@@ -21,10 +21,10 @@ class WeatherBloc extends Bloc<WeatherEvent, WeatherState> {
     try {
       WeatherFactory wf =
           WeatherFactory(openWeatherApiKey, language: Language.ENGLISH);
-      Position position = await Geolocator.getCurrentPosition();
+      // Position position = await Geolocator.getCurrentPosition();
 
       Weather weather = await wf.currentWeatherByLocation(
-          position.latitude, position.longitude);
+          event.position.latitude, event.position.longitude);
 
 
       emit(
