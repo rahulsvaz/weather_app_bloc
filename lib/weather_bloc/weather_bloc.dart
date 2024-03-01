@@ -19,11 +19,13 @@ class WeatherBloc extends Bloc<WeatherEvent, WeatherState> {
       FetchWeatherEvent event, Emitter<WeatherState> emit) async {
     emit(WeatherLoading());
     try {
-      WeatherFactory wf = WeatherFactory(openWeatherApiKey, language: Language.ENGLISH);
+      WeatherFactory wf =
+          WeatherFactory(openWeatherApiKey, language: Language.ENGLISH);
       Position position = await Geolocator.getCurrentPosition();
 
       Weather weather = await wf.currentWeatherByLocation(
           position.latitude, position.longitude);
+
 
       emit(
         WeatherSuccesses(weather: weather),
