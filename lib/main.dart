@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:weather_app_bloc/screens/home_screen/home_scree.dart';
 
 void main() {
   runApp(const MyApp());}
@@ -9,6 +10,8 @@ void main() {
     
     @override
     Widget build (BuildContext context){
-      return MaterialApp();
+      return MaterialApp(
+        home: HomeScreen()
+      );
     }
   }
