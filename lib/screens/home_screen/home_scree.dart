@@ -25,39 +25,49 @@ class HomeScreen extends StatelessWidget {
           child: Stack(
             children: [
               Align(
-                alignment:const  AlignmentDirectional(
+                alignment: const AlignmentDirectional(
                   3,
                   -0.3,
                 ),
                 child: Container(
                   height: 300,
                   width: 300,
-                  decoration: BoxDecoration(
+                  decoration:const  BoxDecoration(
                       shape: BoxShape.circle, color: Colors.deepPurple),
                 ),
-              ), Align(
-                alignment: AlignmentDirectional(
+              ),
+              Align(
+                alignment: const  AlignmentDirectional(
                   -3,
                   -0.3,
                 ),
                 child: Container(
                   height: 300,
                   width: 300,
-                  decoration: BoxDecoration(
+                  decoration:const  BoxDecoration(
                       shape: BoxShape.circle, color: Colors.deepPurple),
                 ),
-              ), Align(
-                alignment: AlignmentDirectional(
+              ),
+              Align(
+                alignment:const AlignmentDirectional(
                   0,
-                  - 1.2,
+                  -1.2,
                 ),
                 child: Container(
                   height: 300,
                   width: 600,
-                  decoration: BoxDecoration(
-                      color: Color(0xFFFFA840 )),
+                  decoration: const  BoxDecoration(
+                    color: Color(0xFFFFA840),
+                  ),
                 ),
-              ),BackdropFilter(filter: ImageFilter.blur(sigmaX: 100.0,sigmaY: 100.0),child: Container(height: height,color: Colors.transparent ,),)
+              ),
+              BackdropFilter(
+                filter: ImageFilter.blur(sigmaX: 100.0, sigmaY: 100.0),
+                child: Container(
+                  height: height,
+                  color: Colors.transparent,
+                ),
+              )
             ],
           ),
         ),
