@@ -8,6 +8,7 @@ import 'package:weather/weather.dart';
 import 'package:weather_app_bloc/data/api_key.dart';
 
 part 'weather_event.dart';
+
 part 'weather_state.dart';
 
 class WeatherBloc extends Bloc<WeatherEvent, WeatherState> {
