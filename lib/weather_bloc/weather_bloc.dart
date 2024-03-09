@@ -5,7 +5,7 @@ import 'package:equatable/equatable.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:meta/meta.dart';
 import 'package:weather/weather.dart';
-import 'package:weather_app_bloc/data/api_key.dart';
+import 'package:weather_app_bloc/helper/openweather.dart';
 
 part 'weather_event.dart';
 
