@@ -39,3 +39,11 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+class WT extends StatelessWidget {
+  const WT({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
